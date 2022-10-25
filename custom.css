@@ -1,0 +1,276 @@
+header {
+    z-index: 99 !important;
+    position: -webkit-sticky;
+    position: sticky!important;
+    top: 0;
+    background-color: #ff8015;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+header .btn_menu{
+    z-index: 99999999 !important;
+    position: relative;
+}
+.menu{
+    z-index: 9999 !important;
+}
+.help {
+    z-index: -9!important;
+    position: relative;
+    right: 20px;
+    bottom: 0;
+    display: none!important;
+}
+.download_garant{
+    display: flex;
+}
+
+.download_garant .icon_btn_tip {
+    margin-right: 20px;
+}
+
+.bosques_logo{
+    width: 493px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: block;
+}
+.certificaciones_logo{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.certificaciones_logo h4{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.certificaciones_logo img{
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS GENERAL */
+.beetrackwidg{
+	width: 600px;
+}
+	
+#beetrack_widget .widget fieldset .form-input input.text_input{
+    height: 13px!important;
+}
+.form-footer .img-footer img {
+    width: 50px!important;
+}
+.reinventamos{
+	background: url('https://edimca.com.ec/assets/images/home/backend-80.jpg'); 
+	background-size: cover;
+}
+
+.reinventamos h3{
+	color: #fff;
+	text-align: center!important; 
+	font-size: 2rem;
+	display: block;
+	font-weight: 700;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+
+
+#beetrack_widget .widget .logo span{
+		font-size: 14px !important;
+	}
+	
+	
+.rastrea {
+    /* display: flex; */
+    background: #71B000;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    position: fixed;
+    right: 125px;
+    border-radius: 10px 10px 0px 0px;
+    bottom: 0px;
+    padding: 10px 0px 0px 0px;
+}
+.rastrea a p{
+    text-align: center;
+    line-height: 8px!important;
+    font-family: bold!important;
+    font-size: 10px!important;
+    color: white!important;
+}
+.rastrea img {
+    width: 50px;
+    text-align: center;
+    margin-left: 23px;
+}
+.rastrea p {
+    margin: 4px;
+}
+
+.contact{
+    margin-top: 50px!important;
+}
+
+.container-cont {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 15px; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* POPUP */
+.popup{
+    background-color: #ffffff;
+    width: 550px;
+    padding: 0px 0px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 320px;
+    top: 62%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+	z-index: 15;
+}
+.popup button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ff8015;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.scroll{
+    z-index: 10!important;
+}
+
+/* POPUP2 */
+.popup2{
+    background-color: #ffffff;
+    width: 468px;
+    padding: 0px 0px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    right: -230px;
+    top: 60%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+
+	z-index: 15;
+}
+.popup2 button{
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 12px;
+}
+.popup2 p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.scroll{
+    z-index: 10!important;
+}
+
+
+
+/* CUSTOM MOBIL */
+@media only screen and (max-width: 480px) {
+	.beetrackwidg{
+		width: 100%!important;
+	}
+	/* Centro de Diseño*/
+	#design #section1 .top{
+		font-size: 25px!important;
+		max-width: 300px!important;
+	}
+	.reinventamos h3 {
+		font-size: 1.15rem!important;
+	}
+	#betrack .head {
+    	font-size: 1rem!important;
+	}
+	#betrack .txt {
+    	font-size: 1.1rem!important;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#betrack .car_b  {
+    	width: 110px!important;
+	}
+	
+	.reinventamos{
+		background: url('https://edimca.com.ec/assets/images/home/despachoMovil.jpg')!important; 
+		background-size: 100%!important;
+	}
+	.popup{
+		background-color: #ffffff;
+		width: 100%!important;
+		padding: 0px 0px;
+		position: fixed!important;
+		transform: translate(-50%,-50%);
+		left: 50%!important;
+		top: 30%!important;
+		border-radius: 8px;
+		font-family: "Poppins",sans-serif;
+		display: none;
+		text-align: center;
+		z-index: 999!important;
+	}
+    .popup2{
+		background-color: #ffffff;
+		width: 100%!important;
+		padding: 0px 0px;
+		position: fixed!important;
+		transform: translate(-50%,-50%);
+		left: 50%!important;
+		top: 75vh !important;
+		border-radius: 8px;
+		font-family: "Poppins",sans-serif;
+		display: none;
+		text-align: center;
+		z-index: 99999!important;
+	}
+}

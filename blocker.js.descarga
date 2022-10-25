@@ -1,0 +1,27 @@
+// Para leer cookie de error
+function getCookie(k) { 
+    var v = document.cookie.match('(^|;) ?' + k + '=([^;]*)(;|$)'); 
+    return v ? v[2] : null 
+}
+
+// soporte IE y otros navegadores
+var xhr = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+
+// Ruta del archivo de verificacion
+var verificationFile = "/assets/php/verficationfile.txt";
+
+xhr.open("GET", verificationFile, true);
+xhr.onloadend = function () {
+    // Si el archivo no existe mostrar ventana
+    if (xhr.status == 404) {
+        document.getElementById("blocker").style.display = "block";
+        document.getElementById("code").focus();
+        if (getCookie("code_error")) {
+            // Mostrar texto de error
+            document.getElementById("errormsg").style.display = "block";
+        }
+    }
+}
+
+xhr.send();
+
